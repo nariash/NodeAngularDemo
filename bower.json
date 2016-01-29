@@ -1,0 +1,13 @@
+{
+  "name": "NodeAngularDemo",
+  "version": "0.0.1",
+  "author": "Nelson Arias",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.9",
+    "font-awesome": "latest",
+    "lodash": "latest",
+    "normalize-css": "latest",
+    "requirejs": "latest"
+  }
+}

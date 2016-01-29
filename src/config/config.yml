@@ -1,0 +1,32 @@
+---
+production: &default
+  serverPort: 3000
+  baseUrl: http://www.nodeangulardemo.local
+  baseApi: /api/
+  views:
+    engine: .hbs
+    extension: .hbs
+    layout: main
+  html:
+    minify: true
+    stylusPrecompile: true
+  controllers:
+    default: home
+  lenguages:
+    default: en
+    list: [en, es, fr, pt, jp]
+
+stage: &stage
+  <<: *default
+  baseUrl: http://stage.nodeangulardemo.local
+
+latest: &latest
+  <<: *stage
+  baseUrl: http://latest.nodeangulardemo.local
+
+development:
+  <<: *latest
+  baseUrl: http://local.nodeangulardemo.local
+  html:
+    minify: false
+    stylusPrecompile: false

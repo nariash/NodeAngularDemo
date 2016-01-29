@@ -1,0 +1,35 @@
+{
+  "name": "NodeAngularDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "preinstall": "nmp prune",
+    "postinstall": "bower prune; bower install; grunt githooks"
+  },
+  "author": "Nelson Arias Hidalgo",
+  "licence": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nariash/NodeAngularDemo.git"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "express-handlebars": "latest",
+    "lodash": "latest",
+    "morgan": "~1.6.1",
+    "stylus": "latest",
+    "nib": "latest",
+    "js-yaml": "latest"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-githooks": "^0.5.0",
+    "grunt-jscs": "latest",
+    "grunt-shell": "latest"
+  }
+}
